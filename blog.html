@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">MonBlog</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:text-blue-200">Accueil</a>
+      <a href="#" class="hover:text-blue-200">Articles</a>
+      <a href="#" class="hover:text-blue-200">À propos</a>
+    </nav>
+  </header>
+
+  <!-- Featured Posts -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-6">Articles en Vedette</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://source.unsplash.com/400x200/?nature" class="w-full rounded mb-3">
+        <h3 class="font-semibold text-lg">Titre 1</h3>
+        <p>Extrait de l'article en vedette.</p>
+      </div>
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://source.unsplash.com/400x200/?writing" class="w-full rounded mb-3">
+        <h3 class="font-semibold text-lg">Titre 2</h3>
+        <p>Un autre extrait captivant pour inciter à lire.</p>
+      </div>
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://source.unsplash.com/400x200/?technology" class="w-full rounded mb-3">
+        <h3 class="font-semibold text-lg">Titre 3</h3>
+        <p>Une brève description de l’article.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="p-8 bg-gray-100">
+    <h2 class="text-xl font-semibold mb-4">Catégories</h2>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full">Tech</span>
+      <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full">Voyage</span>
+      <span class="bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full">Écriture</span>
+      <span class="bg-pink-200 text-pink-800 px-3 py-1 rounded-full">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Recent Posts -->
+  <section class="p-8">
+    <h2 class="text-xl font-semibold mb-4">Articles Récents</h2>
+    <ul class="space-y-2">
+      <li class="flex justify-between border-b pb-1">
+        <span>Comment écrire un bon article</span><span class="text-gray-500 text-sm">1 juin 2025</span>
+      </li>
+      <li class="flex justify-between border-b pb-1">
+        <span>Les meilleurs outils de blog</span><span class="text-gray-500 text-sm">30 mai 2025</span>
+      </li>
+      <li class="flex justify-between border-b pb-1">
+        <span>Voyager en solo</span><span class="text-gray-500 text-sm">28 mai 2025</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Newsletter Subscription -->
+  <section class="p-8 bg-blue-100 text-center">
+    <h2 class="text-xl font-semibold mb-4">Abonnez-vous à la Newsletter</h2>
+    <form class="flex flex-col sm:flex-row justify-center gap-2 max-w-lg mx-auto">
+      <input type="email" placeholder="Votre email" class="p-2 rounded w-full sm:w-auto flex-1 border">
+      <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">S'abonner</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center p-4 mt-8">
+    <div class="flex justify-center space-x-4 mb-2">
+      <a href="#" class="hover:text-blue-300">📘</a>
+      <a href="#" class="hover:text-blue-300">📷</a>
+      <a href="#" class="hover:text-blue-300">🐦</a>
+    </div>
+    <p>&copy; 2025 MonBlog. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
